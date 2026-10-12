@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <title>คู่มือเลือกสถานดูแลผู้สูงอายุ</title>
     <style>
-        body { text-align: center; background: #f4f6f8; padding: 20px; font-family: sans-serif; }
-        h1 { color: #333; margin-bottom: 20px; }
-        img { max-width: 100%; height: auto; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border-radius: 8px; }
+        body { 
+            margin: 0; 
+            background: #f4f6f8; 
+            display: flex; 
+            overflow-x: auto; 
+            scroll-snap-type: x mandatory; 
+            height: 100vh;
+        }
+        img { 
+            height: 100vh; 
+            width: auto; 
+            object-fit: contain; 
+            scroll-snap-align: center; 
+            flex-shrink: 0;
+        }
     </style>
 </head>
 <body>
-    <h1>คู่มือเลือกสถานดูแลผู้สูงอายุ</h1>
     <img src="01.png" alt="หน้า 1">
     <img src="02.png" alt="หน้า 2">
     <img src="03.png" alt="หน้า 3">
