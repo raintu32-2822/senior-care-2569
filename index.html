@@ -2,69 +2,30 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>คู่มือเลือกสถานดูแลผู้สูงอายุ</title>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            background-color: #1a1a1a;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .swiper {
-            width: 100%;
+        body { 
+            margin: 0; 
+            background: #f4f6f8; 
+            display: flex; 
+            overflow-x: auto; 
+            scroll-snap-type: x mandatory; 
             height: 100vh;
         }
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .swiper-slide img {
-            max-width: 100%;
-            max-height: 100vh;
-            object-fit: contain;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        img { 
+            height: 100vh; 
+            width: auto; 
+            object-fit: contain; 
+            scroll-snap-align: center; 
+            flex-shrink: 0;
         }
     </style>
 </head>
 <body>
-
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="01.png" alt="หน้า 1"></div>
-            <div class="swiper-slide"><img src="02.png" alt="หน้า 2"></div>
-            <div class="swiper-slide"><img src="03.png" alt="หน้า 3"></div>
-            <div class="swiper-slide"><img src="04.png" alt="หน้า 4"></div>
-            <div class="swiper-slide"><img src="05.png" alt="หน้า 5"></div>
-        </div>
-        <!-- ปุ่มกดเปลี่ยนหน้า -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- จุดบอกตำแหน่งหน้า -->
-        <div class="swiper-pagination"></div>
-    </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            loop: false,
-            grabCursor: true,
-            effect: 'slide', // หรือเปลี่ยนเป็น 'cards' เพื่อให้ดูเหมือนเปิดการ์ด
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+    <img src="01.png" alt="หน้า 1">
+    <img src="02.png" alt="หน้า 2">
+    <img src="03.png" alt="หน้า 3">
+    <img src="04.png" alt="หน้า 4">
+    <img src="05.png" alt="หน้า 5">
 </body>
 </html>
